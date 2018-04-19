@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TCmianshi</title>
+	<script href ="plmbn.js"></script>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<script type="text/javascript">
+  function showPic(whichpic) {
+  	var source=whichpic.getAttribute("href");
+  	var holder=document.getElementById("holder");
+  	holder.setAttribute("src",source);
+  }
+</script>
+<style type="text/css">
+ div.father{
+ 	background-image:url(sucai1.jpg); 
+ 	background-color: yellow;
+ 	height: 740px;
+ }
+ div.one{
+ 	position: absolute;
+ 	background-image: url(study.png);
+ 	background-color: blue;
+ 	height: 400px;
+ 	width: 500px;
+ 	top: 200px;
+ 	left: 500px;
+ 	z-index: 0;
+ }
+ div.two{
+ 	position: absolute;
+ 	background-image: url(101.jpg);
+ 	height:300px; 
+ 	width:500px;
+ 	top:250px; 
+ 	left:200px;
+ 	z-index: 2;
+ }
+ div.two1{
+ 	position: absolute;
+ 	background-image: url(head.png);
+ 	height:300px; 
+ 	width:250px; 
+ 	left: 450px;
+ 	z-index: 5;
+ 	
+ }
+ div.three{
+ 	background-color: red;
+ 	height: 600px;
+ 	width: 300px;
+ 	position: absolute;
+ 	right: 20px;
+ 	top: 100px;
+ }
+ h1{
+ 	font-size: 100px;
+ }
+ p{
+ 	font-size: 16px;
+ }
+ #holder{
+ 	position: absolute;
+ 	top: 200px;
+ }
+</style>
+<body>
+	<div class="father">
+	  <h1>hello! I am Dang Senlin</h1>
+	<div class="one">666</div>
+	<div class="two">
+	  <p>姓名：党森林</p>
+      <p>性别：男</p>
+      <p>年龄：19</p>
+      <p>故乡：陕西汉中</p>
+      <p>专业：网络工程</p>
+      <p>班级：1702</p>
+      <p>电话：15809252957</p>
+      <p>e-mail:1175618804@qq.com</p>
+      </div>
+	<div class="two1"></div>
+	<div class="three">
+      <a href="tc1.png" onclick="showPic(this) ; return false">我在骑车</a><br><br><br>
+      <a href="tc3.png" onclick="showPic(this);return false">我在洗脚</a><br><br><br>
+      <a href="tc4.png" onclick="showPic(this);return false">我在旅行</a>
+      <img id="holder" src="tc2.png">
+	</div>
+    </div>
+</body>
+</html>
